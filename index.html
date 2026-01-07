@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">我的网站</div>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#works">设计作品</a></li>
+                <li><a href="#skills">我的技能</a></li>
+                <li><a href="#contact">给我留言</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="particles">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="shooting-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text animate-on-scroll" data-animation="fadeIn">
+                <p class="hero-subtitle">欢迎来到</p>
+                <h1 class="hero-title">我的创意空间</h1>
+                <p class="hero-description">设计师 / 开发者 / 创意者</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary animate-on-scroll delay-1" data-animation="slideUp">了解更多</a>
+                    <a href="#works" class="btn btn-secondary animate-on-scroll delay-2" data-animation="slideUp">查看作品</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll delay-3" data-animation="slideRight">
+                <div class="hero-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>创新设计</h3>
+                    <p>用心创造美好</p>
+                </div>
+                <div class="hero-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>专业品质</h3>
+                    <p>追求卓越细节</p>
+                </div>
+                <div class="hero-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3>热情投入</h3>
+                    <p>用心对待每个项目</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator animate-on-scroll delay-4" data-animation="fadeIn">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="slideUp">关于我</h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll delay-1" data-animation="slideLeft">
+                    <img src="384AC78C771C9A485E1AE56429C6242A.jpg" alt="我的照片">
+                </div>
+                <div class="about-text">
+                    <h3 class="animate-on-scroll delay-2" data-animation="slideRight">你好，我是zxy</h3>
+                    <p class="animate-on-scroll delay-3" data-animation="fadeIn">我是一名人工智能技术应用专业的大一新生，对设计充满热情，目前正在学习网页设计和平面设计。</p>
+                    <p class="animate-on-scroll delay-4" data-animation="fadeIn">作为AI专业的学生，我喜欢将人工智能技术与设计相结合，探索科技与美学的融合点。我相信技术为设计赋能，设计让技术更有温度。</p>
+                    <p class="animate-on-scroll delay-5" data-animation="fadeIn">我的设计理念是：用简洁的设计语言传递复杂的信息，让科技更贴近生活，让设计更具智能。我希望通过设计创造出既美观又实用的作品，为用户带来更好的体验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="works-section">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="slideUp">设计作品</h2>
+            <div class="works-grid">
+                <div class="work-item animate-on-scroll delay-1" data-animation="slideUp" onclick="openModal()">
+                    <img src="https://via.placeholder.com/400" alt="平面设计">
+                    <div class="work-info">
+                        <h3>平面设计</h3>
+                        <p>宣传册、海报、名片等设计</p>
+                    </div>
+                </div>
+                <div class="work-item animate-on-scroll delay-2" data-animation="slideUp" onclick="openWebModal()">
+                    <img src="https://via.placeholder.com/400" alt="网页设计">
+                    <div class="work-info">
+                        <h3>网页设计</h3>
+                        <p>企业网站、电商网站设计</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 平面设计模态框 -->
+            <div id="workModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3>平面设计作品</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <div class="carousel-item">
+                                    <img src="牛油果.jpg" alt="牛油果海报">
+                                    <div class="carousel-caption">
+                                        <h4>牛油果海报</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="春天赏花季.jpg" alt="春天赏花季海报">
+                                    <div class="carousel-caption">
+                                        <h4>春天赏花季</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="潮玩海报作业.jpg" alt="潮玩海报">
+                                    <div class="carousel-caption">
+                                        <h4>潮玩海报</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" onclick="prevSlide()">‹</button>
+                            <button class="carousel-btn next" onclick="nextSlide()">›</button>
+                        </div>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="goToSlide(0)"></span>
+                            <span class="dot" onclick="goToSlide(1)"></span>
+                            <span class="dot" onclick="goToSlide(2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 网页设计模态框 -->
+            <div id="webModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeWebModal()">&times;</span>
+                    <h3>网页设计作品</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide web-carousel-slide">
+                                <div class="carousel-item">
+                                    <img src="作业截图1.jpg" alt="作业截图1">
+                                    <div class="carousel-caption">
+                                        <h4>作业截图1</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="作业截图2.jpg" alt="作业截图2">
+                                    <div class="carousel-caption">
+                                        <h4>作业截图2</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="作业截图·3.jpg" alt="作业截图3">
+                                    <div class="carousel-caption">
+                                        <h4>作业截图3</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" onclick="prevWebSlide()">‹</button>
+                            <button class="carousel-btn next" onclick="nextWebSlide()">›</button>
+                        </div>
+                        <div class="carousel-dots web-carousel-dots">
+                            <span class="dot active" onclick="goToWebSlide(0)"></span>
+                            <span class="dot" onclick="goToWebSlide(1)"></span>
+                            <span class="dot" onclick="goToWebSlide(2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="slideUp">我的技能</h2>
+            <div class="skills-grid">
+                <div class="skill-item animate-on-scroll delay-1" data-animation="slideUp">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>设计能力</h3>
+                    <ul class="skill-list">
+                        <li>UI/UX设计</li>
+                        <li>平面设计</li>
+                        <li>品牌设计</li>
+                        <li>网页设计</li>
+                    </ul>
+                </div>
+                <div class="skill-item animate-on-scroll delay-2" data-animation="slideUp">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>软件技能</h3>
+                    <ul class="skill-list">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                    </ul>
+                </div>
+                <div class="skill-item animate-on-scroll delay-3" data-animation="slideUp">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3>开发技能</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>响应式设计</li>
+                    </ul>
+                </div>
+                <div class="skill-item animate-on-scroll delay-4" data-animation="slideUp">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2v20M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3>其他技能</h3>
+                    <ul class="skill-list">
+                        <li>项目管理</li>
+                        <li>团队协作</li>
+                        <li>创意策划</li>
+                        <li>用户研究</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="slideUp">给我留言</h2>
+            <form class="contact-form animate-on-scroll delay-2" data-animation="fadeIn">
+                <div class="form-group animate-on-scroll delay-3" data-animation="slideLeft">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                </div>
+                <div class="form-group animate-on-scroll delay-4" data-animation="slideRight">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                </div>
+                <div class="form-group animate-on-scroll delay-5" data-animation="slideLeft">
+                    <label for="message">留言内容</label>
+                    <textarea id="message" name="message" rows="5" placeholder="请输入您想说的话..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn animate-on-scroll delay-6" data-animation="fadeIn">发送留言</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 我的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const animationClass = element.getAttribute('data-animation');
+                        const delayClass = element.className.match(/delay-\d/);
+
+                        element.classList.add('animate-' + animationClass);
+                        if (delayClass) {
+                            element.classList.add(delayClass[0]);
+                        }
+                        element.style.opacity = '1';
+                        observer.unobserve(element);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                element.style.opacity = '0';
+                observer.observe(element);
+            });
+
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        const headerOffset = 80;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            const form = document.querySelector('.contact-form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('感谢您的留言！我们会尽快回复您。');
+                    this.reset();
+                });
+            }
+        });
+
+        // 轮播模态框功能
+        let currentSlide = 0;
+        let slides = null;
+        let dots = null;
+
+        function openModal() {
+            const modal = document.getElementById('workModal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // 禁止滚动
+            
+            // 初始化轮播
+            slides = document.querySelectorAll('.carousel-slide .carousel-item');
+            dots = document.querySelectorAll('.dot');
+            showSlide(currentSlide);
+            
+            // 添加鼠标滚轮事件
+            const carouselContainer = document.querySelector('.carousel-container');
+            carouselContainer.addEventListener('wheel', handleWheel);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('workModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // 恢复滚动
+            
+            // 移除鼠标滚轮事件
+            const carouselContainer = document.querySelector('.carousel-container');
+            carouselContainer.removeEventListener('wheel', handleWheel);
+        }
+
+        function showSlide(index) {
+            const slide = document.querySelector('.carousel-slide');
+            if (slides) {
+                if (index >= slides.length) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = index;
+                }
+                
+                slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // 更新指示器
+                if (dots) {
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentSlide);
+                    });
+                }
+            }
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // 鼠标滚轮事件处理
+        function handleWheel(event) {
+            event.preventDefault();
+            if (event.deltaY > 0) {
+                nextSlide();
+            } else if (event.deltaY < 0) {
+                prevSlide();
+            }
+        }
+
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('workModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // 网页设计轮播模态框功能
+        let currentWebSlide = 0;
+        let webSlides = null;
+        let webDots = null;
+
+        function openWebModal() {
+            const modal = document.getElementById('webModal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // 禁止滚动
+            
+            // 初始化轮播
+            webSlides = document.querySelectorAll('.web-carousel-slide .carousel-item');
+            webDots = document.querySelectorAll('.web-carousel-dots .dot');
+            showWebSlide(currentWebSlide);
+            
+            // 添加鼠标滚轮事件
+            const carouselContainer = document.querySelector('#webModal .carousel-container');
+            carouselContainer.addEventListener('wheel', handleWebWheel);
+        }
+
+        function closeWebModal() {
+            const modal = document.getElementById('webModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // 恢复滚动
+            
+            // 移除鼠标滚轮事件
+            const carouselContainer = document.querySelector('#webModal .carousel-container');
+            carouselContainer.removeEventListener('wheel', handleWebWheel);
+        }
+
+        function showWebSlide(index) {
+            const slide = document.querySelector('.web-carousel-slide');
+            if (webSlides) {
+                if (index >= webSlides.length) {
+                    currentWebSlide = 0;
+                } else if (index < 0) {
+                    currentWebSlide = webSlides.length - 1;
+                } else {
+                    currentWebSlide = index;
+                }
+                
+                slide.style.transform = `translateX(-${currentWebSlide * 100}%)`;
+                
+                // 更新指示器
+                if (webDots) {
+                    webDots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentWebSlide);
+                    });
+                }
+            }
+        }
+
+        function prevWebSlide() {
+            showWebSlide(currentWebSlide - 1);
+        }
+
+        function nextWebSlide() {
+            showWebSlide(currentWebSlide + 1);
+        }
+
+        function goToWebSlide(index) {
+            showWebSlide(index);
+        }
+
+        // 网页设计轮播鼠标滚轮事件处理
+        function handleWebWheel(event) {
+            event.preventDefault();
+            if (event.deltaY > 0) {
+                nextWebSlide();
+            } else if (event.deltaY < 0) {
+                prevWebSlide();
+            }
+        }
+
+        // ESC键关闭
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('workModal');
+            const webModal = document.getElementById('webModal');
+            if (event.key === 'Escape') {
+                if (modal.style.display === 'block') {
+                    closeModal();
+                } else if (webModal.style.display === 'block') {
+                    closeWebModal();
+                }
+            }
+        });
+
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('workModal');
+            const webModal = document.getElementById('webModal');
+            if (event.target == modal) {
+                closeModal();
+            } else if (event.target == webModal) {
+                closeWebModal();
+            }
+        };
+    </script>
+</body>
+</html>
